@@ -28,7 +28,7 @@ useBookings ()
       console.log(`[0.1]*** *** *** setUserDetails: ${setUserDetails}`);
       const res = await getAccessTokenWithPopup({
         authorizationParams: {
-          audience: "http://localhost:8000",
+          audience: "https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/",
           scope: "openid profile email",
         },
       });

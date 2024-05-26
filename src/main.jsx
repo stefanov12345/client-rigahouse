@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       authorizationParams={{
         redirect_uri: "http://localhost:5173/",
       }}
-      audience='http://localhost:8000'
+      audience='https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/'
       scope='opneid profile email'
     >
       <MantineProvider>
