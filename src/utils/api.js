@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 export const api = axios.create({
-  baseURL: "https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/api",
+  baseURL: "https://backend-rigahouse.vercel.app/api",
 });
 
 export const getAllProperties = async () => {
