@@ -15,13 +15,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         redirect_uri:
           process.env.NODE_ENV === "development"
             ? "http://localhost:5173"
-            : "https://client-rigahouse-apy3rukzp-stefanos-projects-e0d54527.vercel.app/",
+            : "https://https://client-rigahouse.vercel.app/",
       }}
       // audience='https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/'
       audience={
         process.env.NODE_ENV === "development"
           ? "http://localhost:5173"
-          : "https://client-rigahouse-apy3rukzp-stefanos-projects-e0d54527.vercel.app/"
+          : "https://https://client-rigahouse.vercel.app/"
       }
       scope='opneid profile email'
     >
