@@ -11,9 +11,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain='dev-qnwjq68ysys1hiri.us.auth0.com'
       clientId='MhxtqFZejJUM7gB2jvfEFQ4dE8goUvtU'
       authorizationParams={{
-        redirect_uri: "https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/",
+        // redirect_uri: "https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/",
+        redirect_uri:
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:5173"
+            : "https://client-rigahouse-apy3rukzp-stefanos-projects-e0d54527.vercel.app/",
       }}
-      audience='https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/'
+      // audience='https://backend-rigahouse-gl0jxrqug-stefanos-projects-e0d54527.vercel.app/'
+      audience={
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:5173"
+          : "https://client-rigahouse-apy3rukzp-stefanos-projects-e0d54527.vercel.app/"
+      }
       scope='opneid profile email'
     >
       <MantineProvider>
